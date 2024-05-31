@@ -1,0 +1,8 @@
+
+config BR2_PACKAGE_AESD_CHAR
+	bool "aesd-char"
+    depends on BR2_LINUX_KERNEL
+	help
+	  Includes the aesdchar device
+comment "example needs a Linux kernel to be built."
+	depends on !BR2_LINUX_KERNEL
